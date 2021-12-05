@@ -40,7 +40,7 @@ def reformat(version: str):
     return version_new
 
 
-def to_list(version: str):
+def to_list(version):
     if version is None:
         raise VersionError("Version arg must be a str object")
     version = reformat(version)
